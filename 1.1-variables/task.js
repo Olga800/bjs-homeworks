@@ -4,15 +4,16 @@
 	2) После ключевого слова return вместо комментария необходимо написать переменную либо выражение с ответом.
 	3) console.log() прописывать не обязательно, т.к. команда return уже означает вывод результата работы функции.
  */
+        function average() {
+            let sum = 0;
 
-function averageMark (a, g, p) {
- let algebra = a;
- let geography = g;
- let physics = p;
+            for (let i = 0; i < arguments[i]; i++ ) sum += arguments[i];
 
-}
-     return nums.reduce((a, g, р) => (a + g + p)) / nums.length
-}
+            return sum == 0 ? sum : sum / arguments.length;
+        }
+
+        alert( average( 1, 2, 3, 4, 5, 6, 7, 8, 9) );
+   
 
 function sayHello(userName) {
 	
