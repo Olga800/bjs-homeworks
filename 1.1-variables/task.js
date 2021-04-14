@@ -13,14 +13,15 @@
         }
 
         alert( average( 1, 2, 3, 4, 5, 6, 7, 8, 9) );
+//ответ -5
    
 
 function sayHello(userName) {
 	
-  let myName = Мария Степановна;
-	let message = 'Привет, мир! Меня зовут' + myName ;
+let myName = 'Мария Степановна';
+let message = 'Привет, мир! Меня зовут' + myName';
 }
-	return  message;
+return  Привет, мир! Меня зовут' + ${userName};
 }
 
 function calculateFormula() {
