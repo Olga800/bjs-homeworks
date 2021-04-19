@@ -22,9 +22,27 @@
   'quadratic roots': [ 0.5811388300841898, -2.58113883008419 ]
     
     
-function getAverageMark(marks){
-    // код для задачи №2 писать здесь
-    // return averageMark;
+function getAverageMark(marks) {
+  let range = {
+  from: 1,
+  to: 5,
+
+  [Symbol.iterator]() {
+    this.current = this.from;
+    return this;
+  },
+
+  next() {
+    if (this.current <= this.to) {
+      return { done: false, value: this.current++ };
+    } else {
+      return { done: true };
+    }
+  }
+};
+
+for (let num of range) {
+  alert(num); // 1, затем 2, 3, 4, 5
 }
 
 
