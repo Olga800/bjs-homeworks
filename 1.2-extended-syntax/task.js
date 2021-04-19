@@ -1,4 +1,4 @@
-   let quadraticEquation = (a, b, c) => {
+     function getResult( (a, b, c) => {
     if(a == 0);
     let res = { };
     let D = b * b - 4 * a * c;
@@ -15,7 +15,7 @@
     }
     return res;
  }
-  console.log(quadraticEquation(2,4,-3));
+  console.log(getResult(2,4,-3));
 
 {
   discriminant: 40,
