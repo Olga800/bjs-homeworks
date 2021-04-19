@@ -1,4 +1,4 @@
-     function getResult( (a, b, c) => {
+     function getResult(a, b, c) => {
     if(a == 0);
     let res = { };
     let D = b * b - 4 * a * c;
@@ -27,7 +27,4 @@ function getAverageMark(marks){
     // return averageMark;
 }
 
-function askDrink(name,dateOfBirthday){
-    // код для задачи №3 писать здесь
-    // return result;
-}
+
