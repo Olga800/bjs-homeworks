@@ -1,4 +1,4 @@
-let quadraticEquation = (a, b, c) => {
+   let quadraticEquation = (a, b, c) => {
     if(a == 0);
     let res = { };
     let D = b * b - 4 * a * c;
@@ -16,10 +16,11 @@ let quadraticEquation = (a, b, c) => {
     return res;
  }
   console.log(quadraticEquation(2,4,-3));
-// ответ:D = 40
+
 {
   discriminant: 40,
   'quadratic roots': [ 0.5811388300841898, -2.58113883008419 ]
+    
     
 function getAverageMark(marks){
     // код для задачи №2 писать здесь
