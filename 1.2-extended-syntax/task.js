@@ -1,4 +1,4 @@
-     function getResult(a, b, c) => {
+  function getResult(a, b, c)  {
     if(a == 0);
     let res = { };
     let D = b * b - 4 * a * c;
@@ -12,6 +12,7 @@
         tmp.push((-b + Math.sqrt(D)) / (2 * a));
         tmp.push((-b - Math.sqrt(D)) / (2 * a));
         res["quadratic roots"] = tmp;
+    }
     }
     return res;
  }
