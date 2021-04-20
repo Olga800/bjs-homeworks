@@ -1,9 +1,9 @@
-function calculateTotalMortgage(percent, contribution, amount, date) {
-    <input type='text' id="pointspossible"/>
+
+ <input type='text' id="pointspossible"/>
 <input type='text' id="pointsgiven" />
 <input type='text' id="pointsperc" disabled/>
-JavaScript :
-    $(function(){
+
+     $(function(){
     $('#pointspossible').on('input', function() {
       calculate();
     });
@@ -19,11 +19,11 @@ JavaScript :
            }else{
            perc = ((pEarned/pPos) * 100).toFixed(3);
            }
+
         $('#pointsperc').val(perc);
     }
+
 });
-    // return totalAmount;
-}
 
 function getGreeting(name) {
     // код для задачи №2 писать здесь
