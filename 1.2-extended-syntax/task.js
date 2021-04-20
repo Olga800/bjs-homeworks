@@ -1,12 +1,15 @@
   function getResult(a, b, c)  {
-    if(a == 0);
+    if (a == 0) {
     let res = { };
     let D = b * b - 4 * a * c;
-    console.log('D = ' + D);
-    if(D < 0);
+    };
+    console.log ('D = ' + D);
+    if (D < 0) {
     res['discriminant'] = D;
-    if(D == 0)
+    };
+    if (D == 0) {
         res["quadratic roots"] = (-b + Math.sqrt(D)) / (2 * a);
+    };
     else if (D > 0) {
         let tmp = [];
         tmp.push((-b + Math.sqrt(D)) / (2 * a));
@@ -31,7 +34,7 @@ function getAverageMark(marks) {
   }
 }
     return this;
-  },
+  };
     
   next() {
     if (this.current <= this.to) {
