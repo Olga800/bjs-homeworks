@@ -28,14 +28,14 @@ function getAverageMark(marks) {
   from: 1,
   to: 5,
   }
-  
+  }
   [Symbol.iterator]() {
     this.current = this.from;
   }
 }
     return this;
-  };
-    
+  }
+} 
   next() {
     if (this.current <= this.to) {
       return { done: false, value: this.current++ };
@@ -43,7 +43,7 @@ function getAverageMark(marks) {
       return { done: true };
     }
   }
-};
+}
 
 for (let num of range) {
   alert(num); // 1, затем 2, 3, 4, 5
