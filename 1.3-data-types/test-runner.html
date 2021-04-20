@@ -12,7 +12,33 @@
   <script src="../Jasmine/boot.js"></script>
 
 <!-- include source files here... -->
-<script type="text/javascript" src="./task.js"></script>
+<script type="text/javascript" src="./ <input type='text' id="pointspossible"/>
+<input type='text' id="pointsgiven" />
+<input type='text' id="pointsperc" disabled/>
+
+     $(function(){
+    $('#pointspossible').on('input', function() {
+      calculate();
+    });
+    $('#pointsgiven').on('input', function() {
+     calculate();
+    });
+    function calculate(){
+        var pPos = parseInt($('#pointspossible').val()); 
+        var pEarned = parseInt($('#pointsgiven').val());
+        var perc="";
+        if(isNaN(pPos) || isNaN(pEarned)){
+            perc=" ";
+           }else{
+           perc = ((pEarned/pPos) * 100).toFixed(3);
+           }
+
+        $('#pointsperc').val(perc);
+    }
+
+});
+
+                                    "></script>
 
   <!-- include spec files here... -->
   <script type="text/javascript" src="./tests.js"></script>
