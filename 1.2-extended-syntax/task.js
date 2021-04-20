@@ -17,10 +17,7 @@
  }
   console.log(getResult(2,4,-3));
 
-{
-  discriminant: 40,
-  'quadratic roots': [ 0.5811388300841898, -2.58113883008419 ]
-    
+
     
 function getAverageMark(marks) {
   let range = {
