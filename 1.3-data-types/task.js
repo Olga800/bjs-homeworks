@@ -1,5 +1,21 @@
 function calculateTotalMortgage(percent, contribution, amount, date) {
-    // код для задачи №1 писать здесь
+    function getAverageMark(marks){
+if (marks.length === 0){
+marks = 1;
+} else{
+let sumValue = 0;
+sumValue =+ marks[value];
+marks = sumValue / marks.length;
+console.log(sumValue);
+}
+}
+
+getAverageMark(data[key]); 
+console.log(data);
+}
+}
+} getAverageScore(object);
+
     // return totalAmount;
 }
 
