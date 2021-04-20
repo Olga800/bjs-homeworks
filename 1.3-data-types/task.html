@@ -19,32 +19,26 @@
     <button onClick="sayHello()">Поздороваться</button>
     <span id="helloResult"></span>
 
-    <script src="task.js"></script>
-    it('должна верно считать кредит: кейс #1', () => {
-      const nextYearDate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-      expect(calculateTotalMortgage(10, 0, 50000, nextYearDate)).toEqual(52749.53);
-    });
+    <script src="task.js">
+    
+alert("Мы предлагаем Вам сделать вклад в нашем банке на пять лет. Без капитализации.");
+var sum=parseInt(Math.round(prompt("Введите сумму вклада:")));
+var perc=parseInt(Math.round(prompt("Введите желаемый процент:")));
 
-    it('должна верно считать кредит: кейс #2', () => {
-      const nextYearDate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-      expect(calculateTotalMortgage(10, 1000, 50000, nextYearDate)).toEqual(51694.54);
-    });
-
-    it('должна верно считать кредит: кейс #3', () => {
-      const nextYearDate = new Date(new Date().setFullYear(new Date().getFullYear() + 4));
-      expect(calculateTotalMortgage(10, 20000, 20000, nextYearDate)).toEqual(0);
-    });
-
-    it('должна верно считать кредит: кейс #4', () => {
-      const nextYearDate = new Date(new Date().setFullYear(new Date().getFullYear() + 3));
-      expect(calculateTotalMortgage(10, 0, 10000, nextYearDate)).toEqual(11616.19);
-    });
-
-    it('должна верно считать кредит: кейс #5', () => {
-      const nextYearDate = new Date(new Date().setFullYear(new Date().getFullYear() + 3));
-      expect(calculateTotalMortgage(15, 0, 10000, nextYearDate)).toEqual(12479.52);
-    });
-  });
+for(var i=1; i<6; i++){
+var prof = ((sum*perc)*i)/100;
+var profIt = sum + prof;
+  if(sum>0 && perc<100 && perc>0){
+      alert("Ваша прибыль в " +i+"й год - " + prof + ". Ваш доход - " +profIt);
+	  document.write("\nВаша прибыль в " +i+"й год - " + prof + ". Ваш доход - " +profIt);
+    }
+    else {
+        alert("Введены некоректные данные");
+        break;
+    }
+}   
+    </script>
+  
     <script src="main.js"></script>
 </body>
 </html>
