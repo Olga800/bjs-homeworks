@@ -20,17 +20,20 @@ console.log(totalAmount);
  }
   
 Задача № 2
- 
+ 2/1/
+  function getGreeting(name) {
+       if (name != "null") {
+       console.log(`Привет, мир! Меня зовут, ${name}`);
+    }  else (name === "Аноним"|| name === " ") {
+       console.log(`Привет, мир! Меня зовут' + ' ' + 'Аноним`);
+ }
+      getGreeting ('Татьяна')
+   2/2/
  function getGreeting() {
-
-   let name = prompt("Введите имя");
-
+    let name = prompt("Введите имя");
     if (name != "null") {
-     console.log('Привет, мир! Меня зовут' + ' ' + name);
-
-} else (!name || name == "null") {
-  
+    console.log('Привет, мир! Меня зовут' + ' ' + name);
+}   else (!name || name == "null") {
     console.log('Привет, мир! Меня зовут' + ' ' + 'Аноним');
-   };
-
+};
     return greeting;
