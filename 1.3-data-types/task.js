@@ -1,32 +1,24 @@
-function calculateTotalMortgage(percent, contribution, amount, date) {
-    function getAverageMark(marks){
-if (marks.length === 0){
-marks = 1;
-} else{
-let sumValue = 0;
-sumValue =+ marks[value];
-marks = sumValue / marks.length;
-console.log(sumValue);
-}
-}
+let amount = 500000;
+let contribution = 90000;
+let s = amount - contribution;
+let percent = 45;
+let p = percent/(12*100);
+let date = 60;
+let n = 60;
+let monthlyPayment = s*(p + p / (((1+p) ^ n)-1)).toPrecision(2);
 
-getAverageMark(data[key]); 
-console.log(data);
-}
-}
-} getAverageScore(object);
+console.log(monthlyPayment);
 
-    // return totalAmount;
-}
+let totalAmount = monthlyPayment * date; 
 
-let loanAmount = 5000000;
-let initialPayment = 120000;
-let s = loanAmount - initialPayment;
-let percent = 8;
-let P = percent/(12*100); 
-let n = 12;
-let calculation = s*(P+P/(((1+P)^n)-1)).toFixed(2);
-console.log(calculation);
+console.log(totalAmount);
+
+ function calculateTotalMortgage(percent, contribution, amount, date) {
+   
+    return totalAmount;
+ }
+
+
 function getGreeting(name) {
     // код для задачи №2 писать здесь
     // return greeting;
