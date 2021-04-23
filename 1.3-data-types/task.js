@@ -20,8 +20,17 @@ console.log(totalAmount);
  }
   
 Задача № 2
+ 
+ function getGreeting() {
 
-function getGreeting(name) {
-    // код для задачи №2 писать здесь
-    // return greeting;
-}
+   let name = prompt("Введите имя");
+
+    if (name != "null") {
+     console.log('Привет, мир! Меня зовут' + ' ' + name);
+
+} else (!name || name == "null") {
+  
+    console.log('Привет, мир! Меня зовут' + ' ' + 'Аноним');
+   };
+
+    return greeting;
