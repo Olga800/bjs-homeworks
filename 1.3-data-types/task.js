@@ -1,24 +1,23 @@
 
-let amount = 5000000;
-let contribution = 120000;
+let amount = 500000;
+let contribution = 90000;
 let s = amount - contribution;
-let percent = 25;
-let p = percent/(12*100); 
-let n = 12;
+let percent = 45;
+let p = percent/(12*100);
 let date = 60;
+let n = 12;
+let monthlyPayment = s*(p + p / (((1+p) ^ n)-1)).toPrecision(2);
 
-let calculation = s * (p + p/ (((1+p) ^ n)-1)).toFixed(2);
+console.log(monthlyPayment);
 
-console.log(calculation);
-
-let  totalAmount = calculation * date;
+let totalAmount = monthlyPayment * date; 
 
 console.log(totalAmount);
 
-function calculateTotalMortgage(percent, contribution, amount, date) {
+ function calculateTotalMortgage(percent, contribution, amount, date) {
    
     return totalAmount;
-}
+ }
   
 Задача № 2
 
