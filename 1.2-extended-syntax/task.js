@@ -25,10 +25,10 @@ let marks = new Object();
 marks.algebra = [5,4,4,4,5,5,5];
 marks.history = [3,2,4,4,3,3,5];
 marks.gegraphy =[4,4,4,4,3,3,3];
+    
   }
- function getAverageMark(marks) { 
-    return new Object((a, b) => (a + b)) / nums.length;
-}
+
+
 
 
 
