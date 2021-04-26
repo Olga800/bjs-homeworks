@@ -5,7 +5,7 @@
     console.log ('D = ' + D);
     if (D < 0) {
     res['discriminant'] = D;
-    } else (D ==0) {
+    } else (D == 0) {
         res["quadratic roots"] = (-b + Math.sqrt(D) / (2 * a);
     } else (D > 0) {
         let tmp = [];
