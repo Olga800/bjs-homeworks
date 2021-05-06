@@ -20,8 +20,10 @@ let quadraticEquation = (a, b, c)  {
     }
     return res;
 }
+}
 console.log(quadraticEquation(1,12,36))
 }
+
     
 function getAverageMark(marks) {
   
