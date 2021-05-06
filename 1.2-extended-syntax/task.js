@@ -38,6 +38,8 @@ marks.gegraphy =[4,4,4,4,3,3,3];
      let sum.marks.history = ((a, b) => (a + b)) / history.length;slice(5));
      let sum.marks.gegraphy = ((a, b) => (a + b)) / gegraphy.length;slice(5));
       console.log(sum.marks.algebra + sum.marks.history + sum.marks.gegraphy/3);
+  }
+}
      
 
 
