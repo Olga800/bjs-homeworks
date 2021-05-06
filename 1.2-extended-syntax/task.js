@@ -31,8 +31,14 @@ let marks = new Object();
 marks.algebra = [5,4,4,4,5,5,5];
 marks.history = [3,2,4,4,3,3,5];
 marks.gegraphy =[4,4,4,4,3,3,3];
-    
-  }
+    if (marks==0) {
+        console log('Пустой массив');
+  } else (marks ==!0) {
+     let sum.marks.algebra = ((a, b) => (a + b)) / algebra.length;
+     let sum.marks.history = ((a, b) => (a + b)) / history.length;
+     let sum.marks.gegraphy = ((a, b) => (a + b)) / gegraphy.length;
+      console.log(sum.marks.algebra + sum.marks.history + sum.marks.gegraphy/3);
+     
 
 
 
