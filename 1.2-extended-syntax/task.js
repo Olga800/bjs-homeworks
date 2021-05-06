@@ -34,9 +34,9 @@ marks.gegraphy =[4,4,4,4,3,3,3];
     if (marks==0) {
         console log('Пустой массив');
   } else (marks ==!0) {
-     let sum.marks.algebra = ((a, b) => (a + b)) / algebra.length;
-     let sum.marks.history = ((a, b) => (a + b)) / history.length;
-     let sum.marks.gegraphy = ((a, b) => (a + b)) / gegraphy.length;
+     let sum.marks.algebra = ((a, b) => (a + b)) / algebra.length;slice(5));
+     let sum.marks.history = ((a, b) => (a + b)) / history.length;slice(5));
+     let sum.marks.gegraphy = ((a, b) => (a + b)) / gegraphy.length;slice(5));
       console.log(sum.marks.algebra + sum.marks.history + sum.marks.gegraphy/3);
      
 
