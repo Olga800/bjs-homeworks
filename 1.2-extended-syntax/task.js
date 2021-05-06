@@ -1,4 +1,4 @@
-let quadraticEquation = (a, b, c) => {
+let quadraticEquation = (a, b, c)  {
     if(a == 0) {
         return false;
     let res = {};
