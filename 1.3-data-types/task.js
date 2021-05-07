@@ -1,4 +1,5 @@
-
+function calculateTotalMortgage(percent, contribution, amount, date) {
+ 
 let amount = а;
 let contribution = b;
 let s = amount - contribution;
@@ -7,19 +8,16 @@ let p = percent/(12*100);
 let date = d;
 let n = t;
 let monthlyPayment = s*(p + p / (((1+p) ** n)-1)).toPrecision(2);
-
+ 
 console.log(monthlyPayment);
-
+ 
 let totalAmount = monthlyPayment * date; 
-
-console.log(totalAmount);
-
- function calculateTotalMortgage(percent, contribution, amount, date) {
-  
+ 
+console.log(totalAmount); 
+ 
     return totalAmount;
- }
-  
-
+ } 
+}
   
  function getGreeting() {
     let name = prompt("Введите имя");
