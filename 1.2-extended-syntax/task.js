@@ -1,38 +1,31 @@
-function getResult(a,b,c) {
-    let nik = [];
-    let D = b * b - 4 * a * c; 
-    if (D < 0) {
-    res['discriminant'] = D;
-       }
-    if(D == 0) {
-        res["quadratic roots"] = (-b + Math.sqrt(D)) / (2 * a);
-        }
-    else if(D > 0) {
-        let tmp = [];
-        tmp.push((-b + Math.sqrt(D)) / (2 * a));
-        tmp.push((-b - Math.sqrt(D)) / (2 * a));
-        res["quadratic roots"] = tmp;
-    }
-    return nik;
-
-console.log(getResult(1,12,36))
-
-    
-function getAverageMark(marks) {
-  
-let marks = new Object();
-marks.algebra = [5,4,4,4,5,5,5];
-marks.history = [3,2,4,4,3,3,5];
-marks.gegraphy =[4,4,4,4,3,3,3];
-    if (marks==0) {
-        console log('Пустой массив');
-  } else (marks ==!0) {
-     let sum.marks.algebra = ((a, b) => (a + b)) / algebra.length;slice(5));
-     let sum.marks.history = ((a, b) => (a + b)) / history.length;slice(5));
-     let sum.marks.gegraphy = ((a, b) => (a + b)) / gegraphy.length;slice(5));
-      console.log(sum.marks.algebra + sum.marks.history + sum.marks.gegraphy/3);
+function getResult(a, b, c) {
+  const x = [];
+  const discr = Number(b ** 2 - 4 * a * c);
+  if (discr > 0) {
+    x[0] = Number(((-1 * b) + Math.sqrt(discr)) / (2 * a));
+    x[1] = Number(((-1 * b) - Math.sqrt(discr)) / (2 * a));
+  } else if (discr === 0) {
+    x[0] = -1 * b / (2 * a);
   }
+  return x
 }
+
+let marks = [];  
+function getAverageMark(marks) {  
+    let sum = 0;  
+    switch (true) {   
+    case marks.length === 0:    
+       return 0;    
+     case marks.length > 5:    
+           marks.splice(5);    
+    console.log('Больше пяти оценок');   
+    }    for (let i = 0; i < marks.length; i++) {  
+        sum += marks[i];    
+    }   
+    return (sum / marks.length);
+}
+
+
      
 
 
