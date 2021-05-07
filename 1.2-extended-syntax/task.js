@@ -1,12 +1,12 @@
-let quadraticEquation = (a, b, c)  {
-    if(a == 0) {
-        return false;
+function getResult(a,b,c) {
+    if (a == 0) {
     let res = {};
     let D = b * b - 4 * a * c;
+    };
     console.log('D = ' + D);
-    }
-    if(D < 0) {
-        return false;
+    
+    if (D < 0) {
+  
     res['discriminant'] = D;
        }
     if(D == 0) {
@@ -19,10 +19,9 @@ let quadraticEquation = (a, b, c)  {
         res["quadratic roots"] = tmp;
     }
     return res;
-}
-}
-console.log(quadraticEquation(1,12,36))
-}
+
+console.log(getResult(1,12,36))
+
     
 function getAverageMark(marks) {
   
