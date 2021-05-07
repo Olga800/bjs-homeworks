@@ -1,12 +1,7 @@
 function getResult(a,b,c) {
-    if (a == 0) {
-    let res = {};
-    let D = b * b - 4 * a * c;
-    };
-    console.log('D = ' + D);
-    
+    let nik = [];
+    let D = b * b - 4 * a * c; 
     if (D < 0) {
-  
     res['discriminant'] = D;
        }
     if(D == 0) {
@@ -18,7 +13,7 @@ function getResult(a,b,c) {
         tmp.push((-b - Math.sqrt(D)) / (2 * a));
         res["quadratic roots"] = tmp;
     }
-    return res;
+    return nik;
 
 console.log(getResult(1,12,36))
 
