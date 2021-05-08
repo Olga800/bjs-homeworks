@@ -8,11 +8,11 @@ let date = 60;
 let n = 12;
 let monthlyPayment = s*(p + p / (((1+p) ** n)-1)).toPrecision(2);
 
-console.log(monthlyPayment.percent());
+console.log($ {monthlyPayment.percent()});
 
 let totalAmount = monthlyPayment * date; 
 
-console.log(totalAmount);
+console.log(${totalAmount});
  
     return totalAmount;
  }
