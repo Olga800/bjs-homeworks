@@ -7,18 +7,20 @@ function getResult(a, b, c) {
   } else if (discr === 0) {
     x[0] = -1 * b / (2 * a);
   };
-  let x = showSolutionsMessage;
-}
+};
   function showSolutionsMessage(a, b, c) {
-    concole.log(`Вычисляем корни квадратного уравнения ax² + bx + c»`);
-    concole.log(`Значение дискриминанта: D`);
-    if (d < 0) {
+    concole.log(`Вычисляем корни квадратного уравнения ax² + bx + c`);
+    concole.log(`Значение дискриминанта: discr`);
+    if (discr < 0) {
+      concole.log(`Значение дискриминанта: discr`);
       concole.log(`Уравнение не имеет вещественных корней`);
     };
-    if (d == 0) {
+    if (discr == 0) {
+      concole.log(`Значение дискриминанта: discr`);
       concole.log(`Уравнение имеет один корень X₁ = значение_корня`);
     };
-    if (d == 0) {
+    if (discr == 0) {
+      concole.log(`Значение дискриминанта: discr`);
       concole.log(`Уравнение имеет два корня. X₁ = значение_корня_1, X₂ = значение_корня_2`);
     };
   }
