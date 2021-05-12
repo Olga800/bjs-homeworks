@@ -1,22 +1,22 @@
+use strict”;
 function calculateTotalMortgage(percent, contribution, amount, date) {
-let amount = 500000;
-let contribution = 90000;
-let s = amount - contribution;
-let percent = 45;
-let p = percent/(12*100);
-let date = 60;
-let n = 12;
-let monthlyPayment = s*(p + p / (((1+p) ** n)-1)).toPrecision(2);
-
-console.log($ {monthlyPayment.percent()});
-
-let totalAmount = monthlyPayment * date; 
-
-console.log(${totalAmount});
- 
-    return totalAmount;
- }
-  
+  if (percent < 0 || isNaN(percent) === true || percent === “”) {
+    return `Параметр percent содержит неправильное значение ${percent}`;
+  } else if (contribution < 0 || isNaN(contribution) === true || contribution === “”) {
+    return `Параметр contribution содержит неправильное значение ${contribution}`;
+  } else if (amount < 0 || isNaN(amount) === true || amount === “”) {
+    return `Параметр amount содержит неправильное значение ${amount}`;
+  } else if (new Date > date || date === “”) {
+    return `Параметр date содержит неправильное значение ${date}`;
+  }
+  let P = percent/(12*100);
+  let oneMonthImMsec = 31536000000/12;
+  let months = Math.round((date.getTime() - new Date().getTime())/oneMonthImMsec);
+  let monthFee = (amount - contribution) * (P + P/(((1 + P)** months)-1));
+  let totalAmount = monthFee * months;
+  console.log(totalAmount.toFixed(2));
+  return Number(totalAmount.toFixed(2));
+}
 
   
  function getGreeting() {
