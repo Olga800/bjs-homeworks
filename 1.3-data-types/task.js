@@ -30,4 +30,5 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
      console.log(getGreeting ('')); 
      console.log(getGreeting ());
      console.log(getGreeting (null)); 
+     console.log(getGreeting ('Иван'));
 
