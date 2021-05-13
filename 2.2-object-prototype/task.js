@@ -12,33 +12,21 @@ String.prototype.isPalindrome = function isPalindrome() {
 }
 
 function getAverageMark(marks) {
-    function getAverageScore( data ) {	
- 	let list = {};
- 	let average = 0;
- 	let quantity = 0;
- 	for (let discipline in data) {
- 		let value = data[discipline];
- 		let averageMark = 0;
-	    for (let i=0; i < value.length; i++) {
-	    	averageMark = averageMark + value[i];
-	    }
-	    averageMark = (averageMark/value.length);
-	    list[discipline] = averageMark;
-	    quantity++;
-	    average = average + averageMark;
- 	}
- 	list.average = average / quantity;
- 	return list;
- }
+    let sum = 0;
+    if (marks.length === 0) {
+        return 0;
+    }
+    for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
+    }
 
- console.log(getAverageScore({
- 	algebra: [2, 4, 5, 2, 3, 4],
- 	geometry: [2, 4, 5],
- 	russian: [3, 3, 4, 5]
- }))
+    let averageMark = sum / marks.length;
+    let roundedAverage = Math.round(averageMark);
 
-    // return averageMark
+    return roundedAverage;
 }
+
+ 	
 
 function checkBirthday(birthday) {
     // код для задачи №3 писать здесь
