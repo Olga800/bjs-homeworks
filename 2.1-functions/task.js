@@ -1,24 +1,41 @@
-function showSolutionsMessage(a, b, c) {
-  
-  const result = getSolutions(a, b, c);
-  
-  console.log(`Вычисляем корни квадратного уравнения ${a}x² + ${b}x + ${c}`);
-  
-  console.log(`Значение дискриминанта: ${result.D}`);
-  
-  if (result.D > 0) {
-    
-    console.log(`Уравнение имеет два корня X₁ = ${result.roots[0]}, X₂ = ${result.roots[1]}`);
-    
-  } else if (result.D === 0) {
-    
-    console.log(`Уравнение имеет один корень X₁ = ${result.roots[0]}`);
-    
-  } else if (result.D < 0) {
-    
-    console.log('Уравнение не имеет вещественных корней');
-  }
+function getSolutions( a, b, c ) {
+	let D = (Math.pow(b, 2)) - (4 * a * c);
+	let x = [];
+    switch (true) {
+    	case (D < 0):
+      	  break;
+    	case (D == 0):
+    	  x = [(-1 * b) / ( 2 * a)];
+    	  break;
+    	case (D > 0):
+    	  x = [((-b) + Math.pow(D,0.5))/(2 * a), ((-b)-Math.pow(D,0.5))/(2 * a)];
+    	  break;
+    }
+    return { roots: x, D: D };
 }
+
+function showSolutionsMessage( a, b, c ) {
+	let result = getSolutions( a, b, c );
+	console.log(`Вычисляем корни квадратного уравнения ${a}x** + ${b}x + ${c}`);
+	console.log(`Значение дискриминанта: ${result.D}`);
+	let rootsArray = result.roots;
+	switch (true) {
+    	case (result.D < 0):
+    	  console.log(`Уравнение не имеет вещественных корней`);
+    	  break;
+    	case (result.D == 0):
+       	  console.log(`Уравнение имеет один корень X₁ = ${rootsArray[0]}`);
+    	  break;
+    	case (result.D > 0):
+    	 console.log(`Уравнение имеет два корня. X₁ = ${rootsArray[0]}, X₂ = ${rootsArray[1]}`);
+    	  break;
+    }
+}
+ showSolutionsMessage( 1, 2, 3 );
+ showSolutionsMessage( 7, 20, -3 );
+ showSolutionsMessage( 2, 4, 2 );
+
+
 
 function getAverageScore(data) {
     let averageScore = {};
