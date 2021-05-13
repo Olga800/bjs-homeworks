@@ -68,7 +68,7 @@ function getAverageMark(marks) {
     let averageSum = sum / marks.length;
     
     return averageSum;
-}
+};
 
 console.log(getAverageScore({geometry: [2, 4, 5],
     algebra: [2,4,5,2,3,4],
